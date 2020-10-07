@@ -1,0 +1,229 @@
+<html>
+  <!--
+        You have been assigned to the creation of a Smartphone Shop Website.
+        The shop is just a showcase of the products of the shop with some extra informations.
+        No shopping cart / checkout features are required.
+        EX1.:
+        Add H1 title with the name of the shop
+        
+        EX2.: 
+        Add a TABLE with the top 5 products of the shop
+        EX3.: 
+        Each product should have one image, title, description and price
+        EX4.:
+        Add Map to the shop 
+        EX5.: 
+        Add the links to Amazon products for each item in the table
+        EX6.:
+        Add a footer with the address and the name of the shop
+        EX7.: 
+        Add a message board where the user can type a message in it (only client side)
+        // EXTRA 
+        EX8.: 
+        Write a function to change the heading text
+        EX9.:
+        Write a function to change the page background color
+        EX10.:
+        Write a function to change the footer address with a fake one
+    -->
+
+  <head>
+      <div class="center">
+        <h1 id = "textheader"> Dream Shop </h1>
+          </div>
+        <style>
+            .Main_Table {
+              border: 1px solid purple;
+              border-collapse: collapse;
+              margin: 25px 0;
+              font-size: 1.5em;
+              font-family: sans-serif;
+              min-width: 400px;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+            .Main_Table thead tr, th{
+              padding: 15px;
+              background-color:purple;
+              color: black;
+              text-align: left;
+              font-size: 1.5em;
+              }
+              .Main_Table th,td {
+                padding: 12px 15px;
+                background-color: rgb(167, 141, 190);
+                
+                font-size: 1.5em;
+                  }
+              
+            
+            .center {
+              line-height: 100px;
+              height: 100px;
+              text-align: center;}
+
+
+              .Main_Table tbody tr {
+                  background-color: #18e9c6;
+              }
+
+
+              div.myimages {
+              border: 3px black;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              }
+
+            </style>
+            <script>
+                function changeheading(newheader){
+
+                  let newtext = document.getElementById("textheader");
+                  newtext.innerHTML = newheader;
+                }
+                changeheading("Favorite Items")
+                function changebackground (newcolor){
+
+                  let newback = document.body.style.background 
+                  newback.innerHTML= newcolor;
+
+                }
+                changebackground ('rgb(255, 255, 128)')
+
+                function changefooter (newaddress){
+                   
+                  let fakeaddress = document.getElementsByClassName ('about');
+                  fakeaddress.innerHTML = newaddress;
+
+                }
+                changefooter('Spain')
+            </script>
+
+    
+ 
+  </head>
+
+
+  <body> 
+    <table id = "Main_Table">
+      <thead>
+        <tr>
+            <th colspan="1">Products</th>
+            <th colspan="2">Details of the product</th>
+            <th colspan="1">Prices</th>
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>Dresses </td>
+           <td> <a href = https://www.amazon.com/Adrianna-Papell-Womens-Floral-Beaded/dp/B00RW5KH8Q?ref_=Oct_s9_apbd_otopr_hd_bw_b3Exfk3&pf_rd_r=Z3BFZP2RRTBD1AXZKX0K&pf_rd_p=d3021e88-f58c-56d8-8088-958c6ffecd40&pf_rd_s=merchandised-search-12&pf_rd_t=BROWSE&pf_rd_i=2969489011 > 
+            <div class = "myimages">
+            <img  src="dress.jpg" > </img> </a></td>
+           <td> <ul> <li> Color: Blush</li>
+            <li>Imported</li> 
+            <li>Zipper closure</li>
+            <li>Mother of the bride, mother of the groom, special occasions, wedding guest, back zipper, party dress,
+               gala, long gown, evening dress, short sleeves, fully beaded, bridesmaids, bridal shower</li>
+            </ul> </td>
+          </div>
+           <td> 80 $ </td>
+           
+
+        <tr>    
+                <td>Trousers</td>
+                <td> <a href = https://www.amazon.com/GOSOPIN-Drawstring-Elastic-Jogging-Pockets/dp/B08861DW7W/ref=sr_1_13?dchild=1&keywords=Women%27s+Trousers&qid=1601991409&sr=8-13>
+                  <div class = "myimages">
+                  <img src="trousers.jpg"> </img> </a></td>
+                   
+                <td ><ul> <li> 95% Polyester+5%Spandex,lightweight soft fabric,loose fit</li>
+                          <li>Imported</li> 
+                          <li>Pull On closure.</li>
+                          </ul></td>
+                <td> 40 $ </td>
+               
+                </div>
+                </tr>
+                </tr>
+               
+        </tr>
+         <tr>
+                <td> Nail Polish</td>
+                <td> <a href =https://www.amazon.de/-/en/Skymore-Extension-Polish-Building-Starter/dp/B082HMB657/ref=sr_1_8?dchild=1&keywords=gel+n%C3%A4gel&qid=1602016477&sr=8-8>
+                  
+                <div class = "myimages">
+                <img src="Nail_polish.jpg" > </img> </a></td>
+                <td>Gel Nails polish </td>
+                </div>
+                <td> 20 $ </td>
+        </tr>
+        <tr>
+                <td> Makeup </td>
+                <td><a href = https://www.amazon.de/-/en/Too-faced-better-than-mascara/dp/B00P0Q0T28/ref=sr_1_5?crid=2L95243BO8ZAU&dchild=1&keywords=mascara+better+than+sex&qid=1602016629&sprefix=mascara+better+th%2Caps%2C293&sr=8-5> 
+                <div class = "myimages">
+                <img  src="makeup.jpg" > </img> </a></td>
+                <td> <ul> <li> Waterproof</li>
+                          <li>Perfect Black</li> 
+                          <li>8 ml.</li>
+                        </ul></td>
+                      </div>
+                <td> 30 $ </td>
+                
+        </tr>
+        <tr>
+                <td> skinCare</td>
+                <td> <a href = https://www.amazon.de/-/en/Ordinary-Daily-Three-Hydrating-Formulas/dp/B07YPX9N6X/ref=sr_1_2?crid=30DS6B1NRMZYA&dchild=1&keywords=ordinary+skincare+set&qid=1602016694&sprefix=ordinary+skinecare%2Caps%2C247&sr=8-2>
+                  <div class = "myimages">
+                  <img  src="skinecare.jpg" > </img> </a></td>
+                <td> The Ordinary The Daily Set, Three Hydrating Formulas: Squalane Cleanser (50 ml), 
+                  The Ordinary Hyaluronic Acid 2% + B5 Face Serum (30 ml), Natural Moisturising Factors + HA Moisturiser (30 ml) </td>
+                </div>
+                <td> 34 $ </td>
+               
+        </tr>
+      </tbody>
+      </table>
+      <div align="center">
+      <section class="message-board">
+      <div class="title">
+        <h2>
+          Leave a message
+        </h2>
+      </div>
+    
+      <form>
+        <textarea class="message" type="text" id="userInput"></textarea><br/>
+      </form>
+    
+      <input type="submit" onclick="showInput();">
+      <div class="display-area">
+        Existing comment:
+      </div>
+      <p><span id="display"></span></p>
+      
+    </section>
+      </div>
+      <div align="center">
+      <div id="myMap">
+      <iframe frameborder="2" scrolling="no" marginheight="0" marginwidth="0"width="70%" height="333" align = "center" 
+              src="https://www.google.com/maps/embed">
+              
+          <div>
+            <small>
+                <a href="http://embedgooglemaps.com">embedgooglemaps.com</a>
+            </small>
+        </div>
+        </div>
+      </iframe>
+
+
+
+
+       <div class = "footer" > <span class = "about"> </span>Location : Poland <span class = "about"> Deam Shop  </span></div>
+
+</body>
+
+
+</html>
